@@ -13,6 +13,9 @@
         "browserify": "~11.2.0",
         "reactify": "~1.1.1"
     },
+    "scripts": {
+        "build": "browserify . > js/bundle.js"
+    },
     "browserify": {
         "transform": [
             "reactify"
