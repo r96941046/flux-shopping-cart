@@ -36,9 +36,23 @@ module.exports = {
 };
 
 },{}],2:[function(require,module,exports){
-module.exports = {};
+var React = require('react');
 
-},{}],3:[function(require,module,exports){
+var FluxCartApp = React.createClass({displayName: "FluxCartApp",
+
+    render: function() {
+        return (
+            React.createElement("div", {className: "flux-cart-app"}, 
+                React.createElement("span", null, "Hello Flux!")
+            )
+        );
+    }
+
+});
+
+module.exports = FluxCartApp;
+
+},{"react":159}],3:[function(require,module,exports){
 // var FluxCartActions = require('../actions/FluxCartActions');
 
 module.exports = {
@@ -19865,7 +19879,7 @@ module.exports = require('./lib/React');
 window.React = require('react');
 var ProductData = require('./ProductData');
 var CartAPI = require('./utils/CartAPI');
-var FluxCartApp = require('./components/FluxCartApp.react')
+var FluxCartApp = require('./components/FluxCartApp.react');
 
 // Load mock product data into localStorage
 ProductData.init();
@@ -19876,7 +19890,7 @@ CartAPI.getProductData();
 // Render FluxCartApp Controller View
 React.render(
     React.createElement(FluxCartApp, null),
-    document.getElementById('flux-cart')
+    document.getElementById("flux-cart")
 );
 
 },{"./ProductData":1,"./components/FluxCartApp.react":2,"./utils/CartAPI":3,"react":159}]},{},[160]);
