@@ -2,6 +2,7 @@
     "name": "flux-shopping-cart",
     "version": "0.0.1",
     "description": "demo project for flux",
+    "author": "yth",
     "main": "js/app.js",
     "dependencies": {
         "flux": "~2.0.0",
@@ -12,5 +13,9 @@
         "browserify": "~11.2.0",
         "reactify": "~1.1.1"
     },
-    "author": "yth"
+    "browserify": {
+        "transform": [
+            "reactify"
+        ]
+    }
 }
