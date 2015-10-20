@@ -14,6 +14,7 @@
         "reactify": "~1.1.1"
     },
     "scripts": {
+        "start": "watchify -o js/bundle.js -v -d .",
         "build": "browserify . > js/bundle.js"
     },
     "browserify": {
