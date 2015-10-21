@@ -44,7 +44,8 @@ var FluxCartApp = React.createClass({
     render: function() {
         return (
             <div className="flux-cart-app">
-                <span>Hello Flux!</span>
+                <FluxCart products={this.state.cartItems} count={this.state.cartCount} total={this.state.cartTotal} visible={this.state.cartVisible} />
+                <FluxProduct product={this.state.product} cartItems={this.state.cartItems} selected={this.state.selectProduct} />
             </div>
         );
     }
